@@ -1,0 +1,16 @@
+{
+  "Translated Text": {
+    "prefix": "lang",
+    "body": [
+      "Language.of(context).get(\"$0\")"
+    ],
+    "description": "Translated Text"
+  },
+  "Text": {
+    "prefix": "text",
+    "body": [
+      "Text(Language.of(context).get(\"$0\"), style: Theme.of(context).textTheme.bodyText2!)"
+    ],
+    "description": "Translated Text"
+  },
+}
