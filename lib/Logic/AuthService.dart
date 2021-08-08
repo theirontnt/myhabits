@@ -33,5 +33,15 @@ class AuthService {
     }
   }
 
+  Future<String?> updateName(String name) async {
+    if (auth.currentUser == null) return "nouser";
+    await auth.currentUser!.updateDisplayName(name);
+  }
+
+  Future<String?> updatePhotoURL(String photoURL) async {
+    if (auth.currentUser == null) return "nouser";
+    await auth.currentUser!.updatePhotoURL(photoURL);
+  }
+
   static AuthService of(BuildContext context) => MyHabits.of(context).authService;
 }
